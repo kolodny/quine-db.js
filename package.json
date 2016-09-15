@@ -1,11 +1,15 @@
 {
   "name": "quine-db.js",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "QuineDB but in javascript",
   "main": "index.js",
   "scripts": {
     "build": "node generate.js > quine-db.js && chmod +x quine-db.js",
+    "prepublish": "npm run build",
     "test": "npm run build && mocha"
+  },
+  "bin": {
+    "quine-db.js": "./quine-db.js"
   },
   "keywords": [
     "quine",
