@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node generate.js > quine-db.js && chmod +x quine-db.js",
-    "prepublish": "npm run build",
+    "prepublish": "npm test",
     "test": "npm run build && mocha"
   },
   "bin": {
