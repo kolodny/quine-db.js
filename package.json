@@ -1,0 +1,30 @@
+{
+  "name": "quine-db.js",
+  "version": "0.0.0",
+  "description": "QuineDB but in javascript",
+  "main": "index.js",
+  "scripts": {
+    "build": "node generate.js > quine-db.js && chmod +x quine-db.js",
+    "test": "npm run build && mocha"
+  },
+  "keywords": [
+    "quine",
+    "db",
+    "database",
+    "quinedb"
+  ],
+  "author": "Moshe Kolodny",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^3.0.2"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kolodny/quine-db.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kolodny/quine-db.js/issues"
+  },
+  "homepage": "https://github.com/kolodny/quine-db.js#readme"
+}
